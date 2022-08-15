@@ -84,8 +84,9 @@ TICKET 2 (MEDIUM Effort)
 Tasks
 - Make changes to `getShiftsByFacility` function to return this additional `custom_agent_id` whenever it is available for the corresponding Agent working at that Facility
 - Make changes to `generateReport` function to add another column of `custom_agent_id` and keep the `agent_id` column for cases where mapping of custom_agent_id is not done somehow 
-- Updating unit tests for these methods wherever required, existing functionality should not be broken
 - Make appropriate changes to the API so that the mapping is saved in the FacilityAgent table
+- Add a feature flag to globally disable this feature, can be extensible to allow facility level toggle
+- Updating unit tests for these methods wherever required, existing functionality should not be broken
 
 
 TICKET 3 (MEDIUM Effort)
@@ -93,7 +94,7 @@ TICKET 3 (MEDIUM Effort)
 Tasks
 - Add an option on the Facility's dashboard or internal dashboards to attach their custom key
 - Build an uploader to accept CSV files in case of bulk mapping
-- Create additional API to power bulk uploading
+- Create additional API to power bulk uploading efficiently for large files
 
 
 TICKET 4 (LOW Effort)
